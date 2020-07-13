@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="icon" href="http://ngnl.jp/common/favicon/favicon.ico">
+  <title>ノー・ゲーム・ノー・ライフ・ジアロー | Landing Page</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+  <div class="wrapper" id="wrapper">
+    <header id="header">
+      <div class="logo">
+        <a href="#wrapper"><img src="http://ngnl.jp/common/images/pc/header/logo.png" alt="logo" width="150" id="header-img"></a>
+      </div>
+      <nav id="nav-bar">
+        <div class="link">
+          <a href="#story" class="nav-link">ストーリー</a>
+        </div>
+        <div class="link"> 
+          <a href="#example" class="nav-link">エグザーンプル・ビデオー</a>
+        </div>
+        <div class="link">
+          <a href="#character" class="nav-link">キャラクター</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h2>レッツ・ウォッチ・ナウ・イッツ・フリー・フォー・テン・ミニッツ</h2>
+      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+        <div class="form-group">
+          <input type="email" id="email" name="email"  class="form-control" placeholder="エンター・ヨー・イーメール・アドレス" required>
+        </div>
+        <input type="submit" id="submit" class="btn btn-primary" value="サブミット">
+      </form>
+    </section>
+ 
+    <section id="story">
+      <div class="content-story">
+        <img src="https://images.sgcafe.net/2017/03/ngnl-1.jpg" alt="ngnl0" width="300" height="400">
+
+        <p>それは一切の争いが禁じられ、全てがゲームで決まる
+          《盤上の世界(ディス・ボード)》が
+          創造されるはるか以前の出来事。
+          
+          世界を統べる唯一神の座をめぐり、
+          終わりの見えない大戦が続いていた時代。
+          天を裂き、地を割り、星さえも
+          破壊し尽くさんとする凄惨な戦争は、
+          戦う力を持たない人間たちに理不尽な死を撒き散らしていた。
+          
+          強大な力を持つ様々な種族に追いやられ、
+          存亡の危機に瀕する人間を率いる若きリーダーの名はリク。
+          一人でも多くの人間が明日を迎えるために心を砕き、
+          擦り減らす日々が続くある日、
+          リクは打ち捨てられた森霊種(エルフ)の都で
+          機械仕掛けの少女・シュヴィと出会う。
+          
+          機械には持ち得ぬ心に興味を持ってしまったことで
+          エラーを起こしてしまい、
+          仲間たちから廃棄されてしまったシュヴィは、
+          エラーを修正するため、リクに《人間の心》を
+          教えてほしいと頼むのだが……。
+          
+          これは六千年以上もの昔に紡がれた
+          《最も新しい神話》へと至る《最も古き神話》。
+          記録にも記憶にも残らない、
+          誰にも語られることのない物語が今、幕を開ける——。</p>
+      </div>
+    </section>
+
+    <section id="example">
+      <iframe
+        id="video"
+        width="550"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/EOVQh5xyrKg?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="character">
+      <div class="content">
+        <div class="icon">
+          <img src="http://ngnl.jp/common/images/pc/character/thumb_riku.png" alt="logo">
+        </div>
+        <div class="description">
+          <h2>リク</h2>
+          <p>人間たちの集落を率いる若きリーダー。
+            集落を守るためなら、どんな犠牲も厭わずに
+            実行する強い意志を持った少年。</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon">
+          <img src="http://ngnl.jp/common/images/pc/character/thumb_shuvi.png" alt="logo">
+        </div>
+        <div class="description">
+          <h2>シュヴィ</h2>
+          <p>リクが出会う機械仕掛けの少女。
+            機凱種(エクスマキナ)と呼ばれる種族で
+            高い戦闘能力と様々な兵装を有している。</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon">
+          <img src="http://ngnl.jp/common/images/pc/character/thumb_jibril.png" alt="logo">
+        </div>
+        <div class="description">
+          <h2>ジブリール</h2>
+          <p>神の尖兵とも呼ばれる天翼種(フリューゲル)の少女。
+            圧倒的な力を持っており、出会ってしまったが最後、
+            生きて帰ることはできない。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <a href="#wrapper">バック・ター・トップ</a>
+        <br>
+        <a href="#">シインク 2020</a>
+        <br>
+        <a href="http://ngnl.jp/" target="_blank">コンテント・ソース</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const projectName = 'product-landing-page';
+    localStorage.setItem('example_project', 'Product Landing Page');
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <link rel="icon" href="http://ngnl.jp/common/favicon/favicon.ico">
+  <title>アニメー・サーベー | Survey Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="my-container">
+
+    <div class="box header">
+      <h1 id="title">アニメー・サーベー</h1>
+      <p id="description">サンキュー・フォー・ヨー・コントリビューション</p>
+    </div>
+    <div class="box form">
+      <form action="post" id="survey-form" class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="name" id="name-label">ネーム</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="ヨー・ネーム" required>
+          <div class="invalid-feedback">レクァイウド</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">イーメール</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="ヨー・イーメール" required>
+          <div class="invalid-feedback">レクァイウド</div>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">エージ</label>
+          <input type="number" name="age" id="number" class="form-control" min="0" max="100" placeholder="ヨー・エージ" required>
+          <div class="invalid-feedback">レクァイウド</div>
+        </div>
+        
+        <div class="form-group">
+          <label for="dorpdown">ウォット・ヤー・ディッド・ユー・ファースト・ウォッチ・アニメー</label>
+          <select id="dropdown" class="form-control" required>
+            <option value="">ヤー</option>
+            <option value="2010">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+          </select>
+          <div class="invalid-feedback">レクァイウド</div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="radio">ハウ・メニー・タイムズ・ター・ウォッチ・アニメー・イン・アー・ウィーク</label>
+          <div id="radio">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="rad1" name="my-radio" class="custom-control-input" value="1" required>
+              <label class="custom-control-label" for="rad1">1 - 5</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="rad2" name="my-radio" class="custom-control-input" value="2" required>
+              <label class="custom-control-label" for="rad2">5 - 10</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="rad3" name="my-radio" class="custom-control-input" value="3" required>
+              <label class="custom-control-label" for="rad3"> 10++</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="checkbox">ウォット・ヨー・フェーボリット・ジャーンラー・イン・アニメー</label>
+          <div id="checkbox">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="1" class="custom-control-input" id="check1" value="1" required>
+              <label class="custom-control-label" for="check1">アクション</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="2" class="custom-control-input" id="check2" value="2" required>
+              <label class="custom-control-label" for="check2">ロマンス</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="3" class="custom-control-input" id="check3" value="3" required>
+              <label class="custom-control-label" for="check3">コメディー</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="4" class="custom-control-input" id="check4" value="4" required>
+              <label class="custom-control-label" for="check4">アドベンチャー</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="5" class="custom-control-input" id="check5" value="5" required>
+              <label class="custom-control-label" for="check5">ドラーマー</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="textarea">テル・ザー・ポズティブ・アンド・ネガティブ・インプレッション・イン・ウォチング・アニメー</label>
+          <textarea name="textarea" id="textarea" class="form-control" cols="30" rows="2" placeholder="テル・イット・ヒア..." required></textarea>
+          <div class="invalid-feedback">レクァイウド</div>
+        </div>
+
+        <div class="text-center  mt-3"> 
+          <button type="submit" id="submit" class="btn btn-outline-primary btn-lg btn-block text-white">サブミット</button>
+        </div> 
+
+      </form>
+    </div>
+    
+    <embed src="https://www.youtube.com/v/CaksNlNniis&autoplay=1" type="application/x-shockwave-flash"wmode="transparent" width="0" height="0"></embed>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+</html>

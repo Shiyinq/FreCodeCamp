@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #F5F6F7;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+#title-doc {
+  padding: 20px;
+  background-color: #0A0A23;
+  color: #ffffff;
+}
+
+section header {
+  padding-left: 5px;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #0A0A23;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content ul {
+  padding-left: 70px;
+}
+
+.content ul li {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  overflow-x: auto;
+  padding: 2px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #0A0A23;
+}
+
+#navbar ul li{
+  padding: 20px;
+  border-bottom: 2px solid #0A0A23;
+}
+
+ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container #navbar {
+  height: 100vh;
+  flex-basis: 20%;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.container #main-doc {
+  padding: 20px;
+  flex-basis: 80%;
+  margin-left: 320px;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container #navbar {
+    width: 100%;
+    position: relative;
+  }
+
+  .container #main-doc {
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .content {
+    padding: 15px;
+  }
+
+}

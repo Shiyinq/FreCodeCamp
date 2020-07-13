@@ -1,0 +1,43 @@
+body {
+  background: rgb(70,66,65);
+  background: linear-gradient(153deg, rgba(70,66,65,1) 29%, rgba(177,164,148,1) 57%);
+  font-family: 'Lato', sans-serif;
+}
+#title, #sub-title{
+  text-align: center;
+  color: #b1a494;
+}
+
+#img-div {
+  padding: 10px;
+  text-align: center;
+}
+
+#image{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#img-caption {
+  margin-top: 14px;
+  font-size: 15px;
+}
+
+#tribute-info {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#tribute-info p {
+  font-size: 18px;  
+  line-height: 27px;
+  color: #464241;
+}
+
+#tribute-link {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}

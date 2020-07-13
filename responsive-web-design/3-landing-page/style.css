@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: pink;
+}
+
+#header .logo {
+  padding: 6px;
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#nav-bar .link a {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+#hero {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h2 {
+  margin-bottom: 15px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero #email {
+  padding: 8px;
+  border: 1px solid pink;
+  margin-bottom: 5px;
+}
+
+#hero #submit {
+  color: #ffffff;
+  padding: 10px;
+  background-color: pink;
+  border: 0 #ffffff;
+}
+
+#character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  line-height: 1.5;
+}
+
+#character .content {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#character .content .icon {
+  margin-right: 40px;
+}
+
+#example {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#story {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#story .content-story p {
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+#story .content-story {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+}
+
+#footer .footer-content {
+  padding: 8px;
+  flex-basis: 50%;
+  text-align: center;
+  background-color: pink;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 700px) {
+  #header , #nav-bar,  #character .content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #hero {
+    margin-top: 180px;
+  }
+
+  #nav-bar .link a {
+    font-size: 18px;
+  }
+
+  #header .logo {
+    margin-left: 0;
+  }
+
+  #character .content .icon {
+    margin-right: 0;
+  }
+}
