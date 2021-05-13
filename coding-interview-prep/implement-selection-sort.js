@@ -1,7 +1,7 @@
 function selectionSort(array) {
   // Only change code below this line
-  let first = 0;
-  let two = 0;
+  let currentItem = 0;
+  let currentMin = 0;
   let length = array.length;
 
   function swap(array,index0,index1){
@@ -11,13 +11,13 @@ function selectionSort(array) {
   }
 
   for(let i= 0; i < length; i++){
-    if(array[two] > array[i]) two = i;
+    if(array[currentMin] > array[i]) currentMin = i;
 
     if(i === length - 1){
-      swap(array, first, two);
-      first++;
-      two = first;
-      i = two;
+      swap(array, currentItem, currentMin);
+      currentItem++;
+      currentMin = currentItem;
+      i = currentMin;
     }
   }
 
